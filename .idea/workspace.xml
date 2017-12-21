@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1770d088-89ce-4b78-87d4-260adebe239c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-A/port-scan.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package-A/module-A.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -373,6 +371,14 @@
       <option name="presentableId" value="Default" />
       <updated>1513822995967</updated>
     </task>
+    <task id="LOCAL-00001" summary="simple port scan">
+      <created>1513867596483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513867596483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -414,6 +420,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="simple port scan" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple port scan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
