@@ -19,5 +19,6 @@ def scan(ip, ports=None):
             if s:
                 s.close()
 
+
 if __name__ == '__main__':
     scan('localhost', [80, 8080, 22])
