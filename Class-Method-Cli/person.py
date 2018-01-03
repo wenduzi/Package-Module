@@ -16,7 +16,7 @@ class Person:
         self.pay *= (1+percent)
 
     def __str__(self):
-        return ('<%s object => %s:%s,%s>'% (self.__class__.__name__, self.name, self.job, self.pay))
+        return ('<%s object => %s:%s,%s>' % (self.__class__.__name__, self.name, self.job, self.pay))
 
 
 class Manager(Person):
@@ -28,9 +28,9 @@ class Manager(Person):
 
 
 if __name__ == '__main__':
-    wen = Manager('wenduzi', 18, 50000 )
+    wen = Manager('wenduzi', 18, 50000)
     li = Person('lilei', 16, 30000, 'dev')
     han = Person('hanmeimei', 15, 10000, None)
     for obj in (wen, li, han):
         obj.giveraise(0.1)
-        print obj
+        print(obj)
