@@ -9,14 +9,14 @@ maxfield = max(len(f) for f in fieldnames)
 db = shelve.open('person-shelve')
 
 while True:
-    key = raw_input('please enter name: ')
+    key = input('please enter name: ')
     if not key: break
     if key in db:
         record = db[key]
     else:
         record = Person(name='?', age='?')
     for field in fieldnames:
-        newtext = raw_input('%s = %s \n ''  new value?  ' % (field.ljust(maxfield), getattr(record, field)))
+        newtext = input('%s = %s \n ''  new value?  ' % (field.ljust(maxfield), getattr(record, field)))
         if newtext:
             setattr(record, field, newtext)
     db[key] = record
