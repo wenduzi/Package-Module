@@ -1,10 +1,10 @@
-#! /usr/bin/env python3
+#! /usr/bin/env python3.5
 
-import sys, os
+import os
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
 webdir = '.'
-port = 80
+port = 8080
 
 os.chdir(webdir)
 srvaddr = ("", port)
