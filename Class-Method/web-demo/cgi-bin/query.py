@@ -5,7 +5,7 @@ fieldnames = ['name', 'age', 'job', 'pay']
 
 # form = cgi.FieldStorage()
 print('Content-type: text/html')
-sys.path.append('../..')
+sys.path.append('../..')                  # 上上级模块调用
 from person import Person
 
 form = {'key': 'wen'}
