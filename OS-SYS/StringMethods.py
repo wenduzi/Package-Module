@@ -62,7 +62,7 @@ print(os.path.split('/home/wenduzi/examples.desktop'))  # 分离文件名
 print(os.path.join('/root','wenduzi'))                  # 合成文件名
 print(os.sep)                                           # 目录分隔符，无关底层操作系统
 
-print(os.system('python hello.py'))                     # 执行系统命令
+print(os.system('python Hello.py'))                     # 执行系统命令
 pipe = subprocess.Popen('ls', stdout=subprocess.PIPE)   # 执行系统命令，并捕获输出
 print(pipe.communicate())                               # 打印输出
 print(pipe.returncode)                                  # 执行返回值
