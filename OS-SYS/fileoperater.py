@@ -9,6 +9,7 @@ def fileoperation(file, function):
         for line in input123:
             output123.write(function(line))
 
+
 if __name__ == '__main__':
     fileoperation('input', replacer)
     for line in open('input' + '.out', 'r'):

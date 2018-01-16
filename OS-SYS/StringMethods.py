@@ -1,6 +1,6 @@
 # 字符串的用法
 
-import string, sys, os, subprocess
+import string, sys, os, subprocess, glob
 #
 # mystr = '  wo yao shi xian zi wo tu po  '
 #
@@ -63,19 +63,38 @@ import string, sys, os, subprocess
 # print(os.sep)                                           # 目录分隔符，无关底层操作系统
 
 # print(os.system('python Hello.py'))                     # 执行系统命令
-pipe = subprocess.Popen('ls', stdin=subprocess.PIPE, stdout=subprocess.PIPE, shell=True)   # 执行系统命令，并捕获输出
-print(pipe.communicate(' /root'))                         # 打印输出
-print(pipe.returncode)                                  # 执行返回值
-
-pipe = os.popen('python Hello.py')
-pipe.read()
 
 # print(os.mkdir())
 # print(os.remove())
 # print(os.execlp())
 # print(os.fork())
 # print(os.environ)
+import glob
 
+# for (directory, subdirectory, file) in os.walk('/PycharmProjects/Package-Module/'):
+#     print(directory)
+#     for name in file:
+#         path = os.path.join(directory, name)
+#         print(path)
+
+dirname = '/PycharmProjects/Package-Module/OS-SYS'
+
+
+for file in glob.glob(dirname + '/*'):
+    a, b = os.path.split(file)
+    # print(a,b)
+    if b.endswith('.py'):
+        print(b)
+
+# print('\n')
+# print('\n')
+#
+# for file in os.listdir(dirname):
+#     a = os.path.join(dirname,file)
+#     print(a)
+#
+# print(sys.getdefaultencoding())
+# print(sys.getfilesystemencoding())
 
 
 
